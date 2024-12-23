@@ -14,7 +14,7 @@
 ## 2. form registration test application
 
 ### install project test 
-- Clone the repository and execute command `git checkout hm-coding-test`
+- Clone the repository
 - install `node@22.12`
 - run `npm i -g yarn`
 - run backend/ `yarn install`
