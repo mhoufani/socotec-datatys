@@ -1,0 +1,9 @@
+@use 'design-system/utils/mixins';
+
+.profileSuccessUpload {
+  @include mixins.flex(center, center, column);
+  margin-top: 20rem;
+  .button {
+    margin-bottom: var(--space-4);
+  }
+}

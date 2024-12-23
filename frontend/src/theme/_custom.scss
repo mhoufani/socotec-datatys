@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html.behavior-auto {
+  scroll-behavior: auto !important;
+}
+
+html.overflow-hidden body {
+  overflow: hidden;
+}
+
+html.fixed body {
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
+.underline,
+.underline:hover {
+  text-decoration: underline;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+

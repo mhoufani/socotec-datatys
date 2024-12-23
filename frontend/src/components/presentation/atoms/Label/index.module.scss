@@ -1,0 +1,7 @@
+@use "design-system/utils/mixins";
+
+.label {
+    @include mixins.fontStyle(var(--f-size_Label), var(--f-weight_400));
+    @include mixins.colors(var(--c_secondary));
+    line-height: 20px;
+}

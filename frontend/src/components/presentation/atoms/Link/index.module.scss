@@ -1,0 +1,11 @@
+@use 'design-system/utils/screen';
+@use 'design-system/utils/mixins';
+
+.link {
+  @include mixins.fontStyle(var(--f-size_M), var(--f-weight_400));
+}
+
+.disabled {
+  @include mixins.disabled;
+  pointer-events: none;
+}

@@ -1,0 +1,42 @@
+@use 'design-system/utils/mixins';
+
+.profileRegistration {
+  .title {
+    margin-top: var(--space-4);
+  }
+
+  .textField {
+    padding: 0 var(--space-2);
+    width: 50%;
+  }
+
+  .form {
+    @include mixins.flex(center, center);
+    flex-wrap: wrap;
+  }
+
+  .formSectionLeft {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 0;
+  }
+
+  .formSectionRight {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonSubmit {
+    margin-top: var(--space-8);
+    width: 30%;
+  }
+}
+
+
+
+
+
+

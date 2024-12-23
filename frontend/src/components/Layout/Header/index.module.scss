@@ -1,0 +1,17 @@
+@use 'design-system/utils/mixins';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--h_header);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  @include mixins.shape(var(--c_white));
+  .logo {
+    height: 6rem;
+  }
+}

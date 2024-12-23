@@ -1,0 +1,19 @@
+@use '../utils/reset';
+@use '../design-system';
+@use '../utils/mixins';
+@use "variables/colors";
+@use "variables/fonts";
+@use "variables/variables";
+
+body {
+  font-family: var(--f-family);
+}
+
+button,
+input {
+  font-family: var(--f-family);
+}
+
+span {
+  color: var(--c_text);
+}

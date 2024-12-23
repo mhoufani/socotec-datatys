@@ -1,0 +1,25 @@
+@use 'design-system/utils/mixins';
+
+.home {
+  @include mixins.flex(center, center, column);
+  height: 50rem;
+
+  .link {
+    @include mixins.shape(
+                    var(--c_white),
+                    var(--c_primary),
+                    var(--b-radius_button-default)
+    );
+    text-align: center;
+    padding: 0.6rem 2rem 0.7rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: 0 0 0.6px var(--c_black), 0 0 0.6px var(--c_black);
+      box-shadow: var(--b-sdw_default);
+    }
+  }
+}
+
+

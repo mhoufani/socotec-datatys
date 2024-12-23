@@ -1,0 +1,14 @@
+@use 'design-system/utils/mixins';
+
+.layout {
+  margin-top: var(--h_header);
+  overflow: auto;
+}
+
+.headerTitle {
+  @include mixins.fontStyle(
+          $fs: var(--f-size_24),
+          $fw: var(--f-weight_700)
+  );
+  @include mixins.colors(var(--c_title-secondary));
+}
