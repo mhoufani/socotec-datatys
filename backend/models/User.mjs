@@ -1,5 +1,6 @@
 class User {
   constructor({
+    id,
     firstName,
     lastName,
     email,
@@ -9,6 +10,7 @@ class User {
     phoneNumber,
     avatar,
   }) {
+    this._id = id || null;
     this._firstName = firstName || null;
     this._lastName = lastName || null;
     this._email = email || null;
@@ -17,6 +19,14 @@ class User {
     this._country = country || null;
     this._phoneNumber = phoneNumber || null;
     this._avatar = avatar || null;
+  }
+
+  get id() {
+    return this._id;
+  }
+
+  set id(id) {
+    this._id = id;
   }
 
   get firstName() {

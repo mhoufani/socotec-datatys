@@ -1,0 +1,37 @@
+@use 'design-system/utils/mixins';
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+  .title {
+    margin-top: var(--space-4);
+  }
+
+  .textField {
+    padding: 0 var(--space-2);
+  }
+
+  .formSectionLeft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .formSectionRight {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .buttonSubmit {
+    margin-top: var(--space-8);
+    width: 30%;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.editProfile {
+  display: flex;
+  flex-direction: column;
+
+  .deleteButton {
+    height: 4rem;
+    width: 13rem;
+    align-self: flex-end;
+  }
+}

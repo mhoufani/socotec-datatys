@@ -62,3 +62,16 @@
   color: transparent;
   height: initial;
 }
+
+.errored {
+  @include mixins.shape(
+     var(--c_error),
+     var(--c_error),
+     var(--b-radius_button-default)
+  );
+  color: var(--c_white);
+
+  &:hover:enabled {
+    font-weight: var(--f-weight_600);
+  }
+}

@@ -1,0 +1,34 @@
+@use "design-system/utils/mixins";
+
+.profiles {
+  @include mixins.flex(initial, initial, column);
+  .createProfileLink {
+    align-self: end;
+  }
+  .grid {
+    margin-top: var(--space-4);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px var(--c_grey-300) solid;
+    width: 100%;
+    span {
+      @include mixins.flex(initial, center);
+      text-wrap: nowrap;
+      padding: 1rem;
+    }
+    span:nth-child(-n + 7) {
+      @include mixins.fontWeight(var(--f-weight_600));
+      border-bottom: 1px var(--c_grey-300) solid;
+    }
+    .avatarItem {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+    }
+    .editItem {
+      height: 4rem;
+    }
+  }
+}
+
+

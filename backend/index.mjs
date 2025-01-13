@@ -5,7 +5,7 @@ import multer from 'multer';
 import morganMiddleware from './middlewares/logger.mjs';
 import headerMiddleware from './middlewares/header.mjs';
 import healthcheckRoute from './routes/healthcheck/index.mjs';
-import userRoute from './routes/user/index.mjs';
+import userRoute from './routes/users/index.mjs';
 
 const port = process.env.APP_PORT || 3002;
 
