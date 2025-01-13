@@ -41,6 +41,7 @@ I use `sass` and specially `scss.modules` for keeping styles react components is
 ### Frontend architecture folders
 - `pages:` NextJs router use this folder to make routes and call components page for each route automatically.
 - `services:` Contain context User service provider at all components in application.
+- `config:` Contain configuration needed for services.
 - `tools:` Contain global utility functions used by application.
 - `design-system:` Contain all rules integration on sass and mixins functions utils for manage responsive and styles.
 - `theme:` Contain all rules for to override design-system for custom the project like colors primary and secondary.
@@ -50,13 +51,13 @@ This folder regroup also Layout component application used by all pages and comp
 ### Backend architecture folder
 - `routes:` Contain routes api services.
 - `middlewares`: Contain all middlewares shared by the application.
-- `controllers`: Contain all controllers for managing services.
+- `controllers`: Contain all controllers for managing services with CQRS architecture.
 - `models`: Contain all Entities models classes.
 
 ### In Summery
 With more time I could have:
-- implement tests on frontend and backend with jest, react-library, storybook, chai, sinon.
-- provide validation message on upload picture in frontend and create validation service files with multer on backend.
+- Implement tests on frontend and backend with jest, react-library, storybook, chai, sinon.
+- Implement Avatar upload form and provide validation message for file picture in frontend and create validation service files with multer on backend.
 - Review country and city field form with select inputs and fixed list of real countries and cities. 
 - Clean projects configuration eslint for move to esnext and create a production configuration build.
 
